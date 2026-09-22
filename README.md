@@ -32,19 +32,14 @@ $$
 an RBF interpolant has the form
 
 $$
-s(x)
-=
-\sum_{j=1}^{N}
-\lambda_j\,\phi(\|x-x_j\|)
-+
-p(x),
+s(x) = \sum_{j=1}^{N} \lambda_j \, \phi\left(\left\lVert x-x_j \right\rVert\right) + p(x).
 $$
 
 where:
 
-* \(\phi(r)\) is a radial basis function,
-* \(\lambda_j\) are interpolation coefficients,
-* \(p(x)\) is an optional polynomial term.
+- $\phi(r)$ is a radial basis function,
+- $\lambda_j$ are interpolation coefficients,
+- $p(x)$ is an optional polynomial term.
 
 RBFKit constructs and solves the corresponding augmented interpolation system automatically.
 
